@@ -1,2 +1,3 @@
 # go-app-demo
- go-app examples
+
+This repository contains examples using go-app package that work on different platforms.
