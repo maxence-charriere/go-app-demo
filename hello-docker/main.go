@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/maxence-charriere/go-app/pkg/app"
+	"github.com/maxence-charriere/go-app/v6/pkg/app"
 )
 
 func main() {
