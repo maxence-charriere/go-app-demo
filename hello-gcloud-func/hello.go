@@ -8,7 +8,7 @@ import (
 )
 
 var handler = &app.Handler{
-	Title:   "Hello App Engine",
+	Title:   "Hello Google Cloud Function",
 	Author:  "Maxence Charriere",
 	Version: os.Getenv("K_REVISION"),
 }
