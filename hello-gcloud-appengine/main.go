@@ -17,7 +17,7 @@ func main() {
 		T("version", version)
 
 	h := &app.Handler{
-		Title:   "Hello App Engine",
+		Title:   "Hello Google App Engine",
 		Author:  "Maxence Charriere",
 		Version: version,
 	}
