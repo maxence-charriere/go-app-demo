@@ -25,7 +25,7 @@ go build
 The current directory should look like the following:
 
 ```sh
-# github.com/maxence-charriere/go-app/demo/hello-local
+# github.com/maxence-charriere/go-app-demo/hello-local
 .
 ├── README.md
 ├── app.wasm

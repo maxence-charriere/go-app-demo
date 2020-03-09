@@ -5,28 +5,14 @@ hello-docker is a demo that shows how to deploy a progressive web app created wi
 ## Prerequisites
 
 - [Docker](https://www.docker.com) installed on your machine
-- A [Docker file](https://github.com/maxence-charriere/go-app/tree/master/demo/hello-docker/dockerfile)
+- A [Docker file](https://github.com/maxence-charriere/go-app-demo/tree/v6/hello-docker/dockerfile)
 
 ## Build and run Docker contrainer
 
 Go to the hello-docker directory:
 
 ```sh
-cd $GOPATH/src/github.com/maxence-charriere/go-app/demo/hello-docker
-```
-
-Build the hello app:
-
-```sh
-GOARCH=wasm GOOS=js go build -o app.wasm ../hello
-```
-
-Set dependencies:
-
-```sh
-go mod init
-go get -u github.com/maxence-charriere/go-app@v1.0.1
-go mod tidy
+cd $GOPATH/src/github.com/maxence-charriere/go-app-demo/hello-docker
 ```
 
 Build the hello app:
@@ -38,20 +24,18 @@ GOARCH=wasm GOOS=js go build -o app.wasm ../hello
 The current directory should look like the following:
 
 ```sh
-# github.com/maxence-charriere/go-app/demo/hello-docker
+# github.com/maxence-charriere/go-app-demo/hello-docker
 .
 ├── README.md
 ├── app.wasm
 ├── dockerfile
-├── go.mod
-├── go.sum
 └── main.go
 ```
 
 Build Docker image:
 
 ```sh
-docker build -t hello-docker .
+docker build -f dockerfile -t hello-docker ..
 ```
 
 Run the Docker container:
@@ -62,5 +46,5 @@ docker run -p 7000:7000 hello-docker
 
 ## Contribute
 
-Help to develop the [app](https://github.com/maxence-charriere/go-app) package by becoming a sponsor.
+Help to develop the [go-app](https://github.com/maxence-charriere/go-app) package by becoming a sponsor.
 <br>[Become a sponsor](https://opencollective.com/go-app).
