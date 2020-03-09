@@ -4,6 +4,12 @@ hello is a demo that shows how to use the [go-app package](https://github.com/ma
 
 ## Build
 
+Go to the hello directory:
+
+```sh
+cd $GOPATH/src/github.com/maxence-charriere/go-app-demo/hello
+```
+
 ```sh
 GOARCH=wasm GOOS=js go build -o app.wasm
 ```

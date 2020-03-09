@@ -10,10 +10,10 @@ Go to the hello-local directory:
 cd $GOPATH/src/github.com/maxence-charriere/go-app-demo/hello-local
 ```
 
-Build the hello app:
+Copy the hello wasm binary:
 
 ```sh
-GOARCH=wasm GOOS=js go build -o app.wasm ../hello
+cp ../hello/app.wasm .
 ```
 
 Build the server:
@@ -29,6 +29,8 @@ The current directory should look like the following:
 .
 ├── README.md
 ├── app.wasm
+├── go.mod
+├── go.sum
 ├── hello-local
 └── main.go
 ```

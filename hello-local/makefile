@@ -1,5 +1,6 @@
 build:
 	GOARCH=wasm GOOS=js go build -o app.wasm ../hello
+	cp ../hello/app.wasm .
 	go build
 
 run: build
