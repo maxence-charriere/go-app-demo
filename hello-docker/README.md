@@ -15,10 +15,10 @@ Go to the hello-docker directory:
 cd $GOPATH/src/github.com/maxence-charriere/go-app-demo/hello-docker
 ```
 
-Build the hello app:
+Copy the hello wasm binary:
 
 ```sh
-GOARCH=wasm GOOS=js go build -o app.wasm ../hello
+cp ../hello/app.wasm .
 ```
 
 The current directory should look like the following:
@@ -29,13 +29,15 @@ The current directory should look like the following:
 ├── README.md
 ├── app.wasm
 ├── dockerfile
+├── go.mod
+├── go.sum
 └── main.go
 ```
 
 Build Docker image:
 
 ```sh
-docker build -f dockerfile -t hello-docker ..
+docker build -t hello-docker .
 ```
 
 Run the Docker container:

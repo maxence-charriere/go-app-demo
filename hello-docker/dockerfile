@@ -4,13 +4,9 @@ FROM golang:latest
 # Set the Current Working Directory inside the container
 WORKDIR /app
 
-# Download dependencies:
-COPY ./go.mod ./go.mod
-COPY ./go.sum ./go.sum
-RUN go mod download
-
 # Build server:
-COPY  ./hello-docker ./
+COPY  ./ ./
+RUN go mod download
 RUN go build -o app .
 
 # Expose server port:

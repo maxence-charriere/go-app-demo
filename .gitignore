@@ -4,7 +4,6 @@
 *.dll
 *.so
 *.dylib
-*.wasm
 hello-local/hello-local
 
 # Test binary, built with `go test -c`
