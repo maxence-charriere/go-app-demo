@@ -8,4 +8,4 @@ run: build
 
 clean:
 	@go clean -v ./...
-	@rm app.wasm
+	@-rm app.wasm

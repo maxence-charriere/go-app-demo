@@ -3,4 +3,4 @@ build:
 
 clean:
 	@go clean
-	@rm app.wasm
+	@-rm app.wasm
