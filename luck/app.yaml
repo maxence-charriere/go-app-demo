@@ -1,0 +1,9 @@
+service: luck
+runtime: go113
+main: ./server
+
+handlers:
+  - url: /.*
+    script: auto
+    secure: always
+    redirect_http_response_code: 301

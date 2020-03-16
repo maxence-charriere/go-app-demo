@@ -1,0 +1,101 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.layout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/web/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow-y: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 1)
+  );
+}
+
+main {
+  position: relative;
+  max-width: 480px;
+  max-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 38px;
+  text-align: center;
+}
+
+h2 {
+  padding-bottom: 0;
+}
+
+main input {
+  font-weight: 200;
+  font-size: 16pt;
+}
+
+.section {
+  margin-top: 18px;
+}
+
+.draw {
+  font-size: 11pt;
+  font-family: monospace;
+  word-spacing: 6px;
+  text-align: justify;
+}
+
+input:hover,
+input:focus {
+  caret-color: #d17f2f;
+  border-bottom-color: #d17f2f;
+}
+
+a:hover {
+  color: #d17f2f;
+}
+
+.gamerow {
+  cursor: pointer;
+}
+
+.gamerow:hover .title {
+  color: #d17f2f;
+}
+
+.subtitle {
+  font-size: 0.8em;
+  color: darkgrey;
+}
+
+.accent {
+  color: #d17f2f;
+}
+
+.selected {
+  font-size: 1.2em;
+  text-align: right;
+  color: #d17f2f;
+}
