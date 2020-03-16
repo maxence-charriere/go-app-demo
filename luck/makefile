@@ -3,7 +3,7 @@ build:
 	@go build -o luck ./server
 
 run: build
-	PORT=9000 ./
+	PORT=9000 ./luck
 	
 deploy: build
 	gcloud app deploy --project=murlok

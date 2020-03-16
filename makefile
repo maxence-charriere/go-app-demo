@@ -18,8 +18,12 @@ update:
 	@cd luck && \
 		go get -u ./... && \
 		go mod tidy
+	@cd demo && \
+		go get -u ./... && \
+		go mod tidy
 
 clean:
 	@-rm -r */app.wasm
 	@-rm ./luck/luck
+	@-rm ./demo/demo
 	go clean ./...
