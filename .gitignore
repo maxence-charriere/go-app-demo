@@ -5,6 +5,7 @@
 *.so
 *.dylib
 hello-local/hello-local
+luck/luck
 
 # Test binary, built with `go test -c`
 *.test

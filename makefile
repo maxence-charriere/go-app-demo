@@ -15,7 +15,11 @@ update:
 	@cd hello-local && \
 		go get -u ./... && \
 		go mod tidy
+	@cd luck && \
+		go get -u ./... && \
+		go mod tidy
 
 clean:
-	@rm -r hello-*/app.wasm
+	@-rm -r */app.wasm
+	@-rm ./luck/luck
 	go clean ./...
