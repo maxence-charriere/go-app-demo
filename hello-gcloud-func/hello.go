@@ -10,6 +10,7 @@ import (
 var handler = &app.Handler{
 	Title:   "Hello Google Cloud Function",
 	Author:  "Maxence Charriere",
+	RootDir: "https://storage.googleapis.com/goapp-gcloud-function",
 	Version: os.Getenv("K_REVISION"),
 }
 

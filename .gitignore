@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+*.wasm
 hello-local/hello-local
 luck/luck
 

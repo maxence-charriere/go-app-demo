@@ -39,6 +39,9 @@ func main() {
 		Styles: []string{
 			"/web/luck.css",
 		},
+		CacheableResources: []string{
+			"/web/bg.jpg",
+		},
 		Version: version,
 	}); err != nil {
 		log.Error("listening and serving http requests failed").

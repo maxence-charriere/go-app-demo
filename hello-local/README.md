@@ -2,12 +2,25 @@
 
 hello-local is a demo that shows how to run a progressive web app created with the [go-app package](https://github.com/maxence-charriere/go-app) on your local machine.
 
+## TLDR
+
+```sh
+cd $GOPATH/src/github.com/maxence-charriere/go-app-demo/hello-local
+make run
+```
+
 ## Build and run
 
 Go to the hello-local directory:
 
 ```sh
 cd $GOPATH/src/github.com/maxence-charriere/go-app-demo/hello-local
+```
+
+Make sure the `hello` directory is built:
+
+```sh
+cd ../hello && make build && cd -
 ```
 
 Copy the hello wasm binary:

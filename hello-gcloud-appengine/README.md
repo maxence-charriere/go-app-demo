@@ -16,6 +16,12 @@ Go to the hello-gcloud-appengine directory:
 cd $GOPATH/src/github.com/maxence-charriere/go-app-demo/hello-gcloud-appengine
 ```
 
+Make sure the `hello` directory is built:
+
+```sh
+cd ../hello && make build && cd -
+```
+
 Copy the hello wasm binary:
 
 ```sh
