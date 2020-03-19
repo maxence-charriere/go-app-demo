@@ -8,14 +8,6 @@ hello-gcloud-appengine is a demo that shows how to run a progressive web app cre
 - A [Google Cloud project](https://console.cloud.google.com/cloud-resource-manager)
 - An [app.yaml file](https://github.com/maxence-charriere/go-app/tree/master/demo/hello-appengine/app.yaml)
 
-## TLDR
-
-```sh
-cd $GOPATH/src/github.com/maxence-charriere/go-app-demo/hello-gcloud-appengine
-make deploy
-make run
-```
-
 ## Build and deploy
 
 Go to the hello-gcloud-appengine directory:
