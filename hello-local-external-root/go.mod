@@ -1,4 +1,4 @@
-module github.com/maxence-charriere/go-app-demo/demo
+module github.com/maxence-charriere/go-app-demo/hello-local-external-root
 
 go 1.14
 

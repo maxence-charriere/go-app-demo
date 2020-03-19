@@ -28,6 +28,12 @@ func main() {
 			"/web/hello.css",
 			"/web/city.css",
 		},
+		CacheableResources: []string{
+			"/web/space.jpg",
+			"/web/beijing.jpg",
+			"/web/paris.jpg",
+			"/web/sf.jpg",
+		},
 		Version: version,
 	})
 

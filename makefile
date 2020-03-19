@@ -15,6 +15,9 @@ update:
 	@cd hello-local && \
 		go get -u ./... && \
 		go mod tidy
+	@cd hello-local-external-root && \
+		go get -u ./... && \
+		go mod tidy
 	@cd luck && \
 		go get -u ./... && \
 		go mod tidy

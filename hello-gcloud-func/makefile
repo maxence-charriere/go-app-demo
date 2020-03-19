@@ -3,6 +3,9 @@ deploy:
 	@gcloud functions deploy Hello --runtime go113 --trigger-http --project go-app-demo-42
 	@firebase deploy
 
+run:
+	@open https://go-app-demo-42.firebaseapp.com
+
 clean:
 	@go clean
 	@-rm app.wasm
