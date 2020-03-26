@@ -1,5 +1,9 @@
 runtime: go113
 
+instance_class: F1
+automatic_scaling:
+  max_instances: 1
+
 handlers:
   # Enforce https:
   - url: /.*

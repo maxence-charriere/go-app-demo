@@ -7,6 +7,7 @@
 *.wasm
 hello-local/hello-local
 luck/luck
+demo/demo
 
 # Test binary, built with `go test -c`
 *.test
