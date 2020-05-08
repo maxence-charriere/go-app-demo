@@ -14,7 +14,8 @@ func main() {
 
 	log.Info("stating app engine server").
 		T("addr", addr).
-		T("version", version)
+		T("version", version).
+		T("exec", os.Args[0])
 
 	h := &app.Handler{
 		Title:   "Hello Google App Engine",

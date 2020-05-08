@@ -34,6 +34,7 @@ func main() {
 			"/web/paris.jpg",
 			"/web/sf.jpg",
 		},
+		// UseMinimalDefaultStyles: true,
 		Version: version,
 	})
 
